@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos/estilosIndex.css">
+</head>
+<body>
+    <header>
+        <h1>Sede electrónica</h1>
+        <p>Sede Electrónica - Ministerio de educación y Formación Profesional</p>
+    </header>
+    <div class="cuerpo">
+        <br>
+        <h2>Registro</h2>
+        <p><i>*Datos de carácter obligatorio</i></p>
+        <br>
+        <h3>DATOS DEL USUARIO</h3>
+        <form id="formularioTexMex" action="" novalidate>
+            <div class="formulario">
+                *Nombre:
+                <input type="text" id="nombre" placeholder="Ane">
+                <span class="error" id="errorNombre"></span>
+                <br>
+                *Primer apellido:
+                <input type="text" id="apellido1" placeholder="Pérez">
+                <span class="error" id="errorApellido"></span>
+                <br>
+                Segundo apellido:
+                <input type="text" id="apellido2" placeholder="Senín">
+                <br>
+                *Fecha nacimiento:
+                <input type="date" id="fechaNacimiento" placeholder="10/07/2005">
+                <span class="error" id="errorFechaNacimiento"></span>
+                <br>
+                *Tipo documento:
+                <select name="" id="tipoDocumento">
+                    <option value="DNI">DNI</option>
+                    <option value="NIE">NIE</option>
+                </select>
+                <span class="error" id="errorTipoDocumento"></span>
+                <br>
+                *Documento:
+                <input type="text" id="numDocumento" maxlength="9" placeholder="72430205Q">
+                <span class="error" id="errorNumDocumento"></span>
+                <br>
+                <p class="advertencia">⚠️Este identificador se utilizará como usuario de acceso a la Sede electrónica.</p>
+                <br>
+                *Contraseña:
+                <input type="password" id="contraseña" placeholder="MiContraseña123@">
+                <span class="error" id="errorContraseña"></span>
+                <br>
+                *Repita Contraseña:
+                <input type="password" id="repetirContraseña" placeholder="MiContraseña123@">
+                <span class="error" id="errorRepetirContraseña"></span>
+                <br>
+                Número de soporte/IDESP/IXESP:
+                <input type="number" id="numSoporte" placeholder="1234">
+                <br>
+                <p class="advertencia">⚠️Si selecciona como Tipo de Documento DNI deberá informar el IDESP,
+                si por el contrario selecciona NIE deberá informar el IXESP para que
+                el Sistema pueda verificar sus Datos de Identidad con la Dirección
+                General de la Policía. <br>
+                <a href="">Ver ayuda identidad.</a><br>
+                Le recordamos en tal caso, que la información introducida en los
+                campos Nombre, Primor apellido y Segundo apellido (en caso de estar
+                informado) deben ser EXACTAMENTE IGUALES a los existentes en su
+                documento de identificación.
+                </p>
+                <br>
+                *Correo electrónico:
+                <input type="email" id="correo" placeholder="ane@gmail.com">
+                <span class="error" id="errorCorreo"></span>
+                <br>
+                *Repita correo electrónico:
+                <input type="email" id="repetirCorreo" placeholder="ane@gmail.com">
+                <span class="error" id="errorRepetirCorreo"></span>
+                <br>
+                *Teléfono movil:
+                <input type="number" id="telefonoMovil" placeholder="665198775">
+                <span class="error" id="errorTelefono"></span>
+                <br>
+                <p class="advertencia">⚠️El correo electrónico y el teléfono móvil indicados se utilizarán
+                para recibir comunicaciones relativas a los trámites implementados
+                en esta sede electrónica.</p>
+            </div>
+        <br>
+        <h3>DECLARACIONES</h3>
+            <div class="formulario">
+                <input type="checkbox" id="declaraciones1">*Declaro que los datos que figuran en la solicitud de registro son
+                ciertos, asumiendo en caso contrario, las responsabilidades que
+                pudieran derivarse de su inexactitud y autorizando al Ministerio de
+                Educación y Formación Profesional la consulta de los mismos en el
+                Sistema de Verificación de Datos de Identidad de la Dirección
+                General de la Policía.
+                <br>
+                <input type="checkbox" id="declaraciones2"><b>*Doy mi consentimiento</b>
+                <br>
+                <div class="aLaDerecha">
+                    <p><b>Información importante</b></p>
+                    <p>Al firmar esta petición queda establecido que usted presta su
+                    consentimiento expreso al tratamiento de sus datos personales. Lea,
+                    antes de firmar, la información básica.
+                    </p>
+                    <p><b>Información básica</b></p>
+                    <p>Los datos personales recogidos serán incorporados en el registro de
+                    actividades de tratamiento del Ministerio de Educación y Formación
+                    Profesional denominado SEDE ELECTRÓNICA en cumplimiento del
+                    Reglamento General de Protección de Datos:
+                    </p>
+                </div>
+                <ul>
+                    <li><b>Responsable del tratamiento:</b> Subsecretaría de Educación y
+                    Formación Profesional</li>  
+                    <li><b>Finalidad:</b> Registro de los ciudadanos en la sede electrónica del
+                    Ministerio, para realizar trámites electrónicos de los que el
+                    ministerio es competente, comprendiendo todo el ciclo del trámite
+                    administrativo</li>
+                    <li><b>Legitimación:</b> Consentimiento del interesado y orden EDU/947/2010,
+                    de 13 de abril por la que se crea y regula el registro electrónico
+                    del Ministerio de Educación y Formación Profesional</li>
+                    <li><b>Destinatarios:</b> No están previstos</li>
+                    <li><b>Derechos:</b> Acceso, rectificación, limitación del tratamiento,
+                    portabilidad de los datos, oposición y a no ser objeto de decisiones
+                    individualizadas.</li>
+                </ul>
+                <div class="aLaDerecha">
+                    <p>Declaro que he leído la INFORMACIÓN BÁSICA referente a los derechos
+                    a ejercitar. Puede consultar la información adicional y detallada
+                    sobre protección de datos en enlace:
+                    https://sede.educacion.gob.es/registro-electronico/proteccion-datos</p>
+                </div>
+                <span class="error" id="errorDeclaraciones"></span>
+            </div>
+
+            <!--Validaciones con JavaScript-->
+            <script src="js/validaciones.js"></script>
+            <button type="submit" onclick="return confirmarEnvio()">Envíar</button>
+        </form>
+    </div>
+</body>
+</html>

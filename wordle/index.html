@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wordle</title>
+    <link rel="stylesheet" href="estilos/estilosIndex.css">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3600/3600973.png">
+</head>
+<body>
+    <h1>LA PALABRA DEL DIA</h1>
+    <br>
+    <!--INPUTS-->
+    <div class="intentosPalabras">
+        <div class="intentoUno">
+            <!--oninput permite que solamente se puedan introducir letras(ni espacios ni numeros ni valores especiales)-->
+            <input type="text" class="letra" maxlength="1" oninput="this.value=this.value.replace(/[^a-zA-Z]/g,'');">
+            <input type="text" class="letra" maxlength="1" oninput="this.value=this.value.replace(/[^a-zA-Z]/g,'');">
+            <input type="text" class="letra" maxlength="1" oninput="this.value=this.value.replace(/[^a-zA-Z]/g,'');">
+            <input type="text" class="letra" maxlength="1" oninput="this.value=this.value.replace(/[^a-zA-Z]/g,'');">
+            <input type="text" class="letra ultimaLetra" maxlength="1" oninput="this.value=this.value.replace(/[^a-zA-Z]/g,'');">
+        </div>
+        <div class="intentoDos">
+            <input type="text" maxlength="1" class="letra" oninput="this.value=this.value.replace(/[^a-zA-Z]/g,'');">
+            <input type="text" maxlength="1" class="letra" oninput="this.value=this.value.replace(/[^a-zA-Z]/g,'');">
+            <input type="text" maxlength="1" class="letra" oninput="this.value=this.value.replace(/[^a-zA-Z]/g,'');">
+            <input type="text" maxlength="1" class="letra"oninput="this.value=this.value.replace(/[^a-zA-Z]/g,'');">
+            <input type="text" maxlength="1" class="letra ultimaLetra" oninput="this.value=this.value.replace(/[^a-zA-Z]/g,'');">
+        </div>
+        <div class="intentoTres">
+            <input type="text" maxlength="1" class="letra" oninput="this.value=this.value.replace(/[^a-zA-Z]/g,'');">
+            <input type="text" maxlength="1" class="letra" oninput="this.value=this.value.replace(/[^a-zA-Z]/g,'');">
+            <input type="text" maxlength="1" class="letra" oninput="this.value=this.value.replace(/[^a-zA-Z]/g,'');">
+            <input type="text" maxlength="1" class="letra" oninput="this.value=this.value.replace(/[^a-zA-Z]/g,'');">
+            <input type="text" maxlength="1" class="letra ultimaLetra" oninput="this.value=this.value.replace(/[^a-zA-Z]/g,'');">
+        </div>
+        <div class="intentoCuatro">
+            <input type="text" maxlength="1" class="letra" oninput="this.value=this.value.replace(/[^a-zA-Z]/g,'');">
+            <input type="text" maxlength="1" class="letra" oninput="this.value=this.value.replace(/[^a-zA-Z]/g,'');">
+            <input type="text" maxlength="1" class="letra" oninput="this.value=this.value.replace(/[^a-zA-Z]/g,'');">
+            <input type="text" maxlength="1" class="letra" oninput="this.value=this.value.replace(/[^a-zA-Z]/g,'');">
+            <input type="text" maxlength="1" class="letra ultimaLetra" oninput="this.value=this.value.replace(/[^a-zA-Z]/g,'');">
+        </div>
+        <div class="intentoCinco">
+            <input type="text" maxlength="1" class="letra" oninput="this.value=this.value.replace(/[^a-zA-Z]/g,'');">
+            <input type="text" maxlength="1" class="letra" oninput="this.value=this.value.replace(/[^a-zA-Z]/g,'');">
+            <input type="text" maxlength="1" class="letra" oninput="this.value=this.value.replace(/[^a-zA-Z]/g,'');">
+            <input type="text" maxlength="1" class="letra" oninput="this.value=this.value.replace(/[^a-zA-Z]/g,'');">
+            <input type="text" maxlength="1" class="letra ultimaLetra" oninput="this.value=this.value.replace(/[^a-zA-Z]/g,'');">
+        </div>
+        <div class="intentoSeis">
+            <input type="text" maxlength="1" class="letra" oninput="this.value=this.value.replace(/[^a-zA-Z]/g,'');">
+            <input type="text" maxlength="1" class="letra" oninput="this.value=this.value.replace(/[^a-zA-Z]/g,'');">
+            <input type="text" maxlength="1" class="letra" oninput="this.value=this.value.replace(/[^a-zA-Z]/g,'');">
+            <input type="text" maxlength="1" class="letra" oninput="this.value=this.value.replace(/[^a-zA-Z]/g,'');">
+            <input type="text" maxlength="1" class="letra ultimaLetra" oninput="this.value=this.value.replace(/[^a-zA-Z]/g,'');">
+        </div>
+    </div>
+
+    <!--TECLADO-->
+    <div class="teclado">
+        <div class="fila">
+            <div class="tecla" data-key="Q">Q</div>
+            <div class="tecla" data-key="W">W</div>
+            <div class="tecla" data-key="E">E</div>
+            <div class="tecla" data-key="R">R</div>
+            <div class="tecla" data-key="T">T</div>
+            <div class="tecla" data-key="Y">Y</div>
+            <div class="tecla" data-key="U">U</div>
+            <div class="tecla" data-key="I">I</div>
+            <div class="tecla" data-key="O">O</div>
+            <div class="tecla" data-key="P">P</div>
+        </div>
+        <div class="fila">
+            <div class="tecla" data-key="A">A</div>
+            <div class="tecla" data-key="S">S</div>
+            <div class="tecla" data-key="D">D</div>
+            <div class="tecla" data-key="F">F</div>
+            <div class="tecla" data-key="G">G</div>
+            <div class="tecla" data-key="H">H</div>
+            <div class="tecla" data-key="J">J</div>
+            <div class="tecla" data-key="K">K</div>
+            <div class="tecla" data-key="L">L</div>
+            <div class="tecla" data-key="Ñ">Ñ</div>
+        </div>
+        <div class="fila">
+            <div class="tecla" id="Enter" data-key="ENTER">✓</div>
+            <div class="tecla" data-key="Z">Z</div>
+            <div class="tecla" data-key="X">X</div>
+            <div class="tecla" data-key="C">C</div>
+            <div class="tecla" data-key="V">V</div>
+            <div class="tecla" data-key="B">B</div>
+            <div class="tecla" data-key="N">N</div>
+            <div class="tecla" data-key="M">M</div>
+            <div class="tecla" id="Retroceso" data-key="RETROCESO">⌫</div>
+        </div>
+    </div>
+    <!--CARGAR EL JAVA SCRIPT-->
+    <script src="js/procesos.js"></script>
+</body>
+</html>
